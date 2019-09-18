@@ -7,7 +7,7 @@ def line(array)
     string = "The line is currently: "
     counter = 1 
     array.each_with_index do |name,index|
-      string << "#{counter}. #{name} "
+      string << "#{counter}. #{name}"
       counter += 1
     end
     puts string

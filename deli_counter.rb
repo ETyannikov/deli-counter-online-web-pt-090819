@@ -4,10 +4,10 @@ def line(array)
   if array == []
     puts "The line is currently empty."
   else
-    string = "The line is currently: "
+    string = "The line is currently:"
     counter = 1 
     array.each_with_index do |name,index|
-      string << "#{counter}. #{name}"
+      string << " #{counter}. #{name}"
       counter += 1
     end
     puts string

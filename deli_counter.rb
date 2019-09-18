@@ -4,13 +4,14 @@ def line(array)
   if array == []
     puts "The line is currently empty."
   else
-    puts "The line is currently: "
+    string = "The line is currently: "
     counter = 1 
     array.each_with_index do |name,index|
-    puts "#{counter}.#{name} "
-    counter += 1
+      string << "#{counter}.#{name} "
+      counter += 1
+    end
+    puts string
   end
-end
 end
 
 def take_a_number(array,name)
